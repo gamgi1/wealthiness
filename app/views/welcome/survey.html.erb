@@ -1,0 +1,96 @@
+<%= form_tag "/calculate", method: "get" do %>
+  <div class="form-group">
+    What is your age?
+    <select class="form-control">
+      <option>18-35</option>
+      <option>35-65</option>
+      <option>65+</option>
+    </select>
+  </div>
+  <div class="form-group">
+    What is your annual income?
+    <select class="form-control">
+      <option><$35,000</option>
+      <option>Between $35,000 and $160,000</option>
+      <option>Over $160,000</option>
+    </select>
+  </div>
+  <div class="form-group">
+    How many calories of junk food do you consume each day?
+    <input type="number" name="calories" value="">
+  </div>
+  <div class="form-group">
+    Do you gamble?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions1" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions1" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    How many times a week do you exercise aerobically?
+    <input type="number" name="exercise" value="">
+  </div>
+  <div class="form-group">
+    Do you listen to audio books?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions2" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions2" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you maintain a to-do list?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions3" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions3" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you make your children read two or more non-fiction books a month?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions4" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions4" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you make your children volunteer 10 hours or more a month?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions5" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions5" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you make Happy Birthday calls?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions6" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions6" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you write down your goals?
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions7" value="option1"> Yes
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions7" value="option2"> No
+    </label>
+  </div>
+  <div class="form-group">
+    Do you read 30 minutes or more each day for education or career reasons?
+
+  </div>
+  <div class="form-group">
+    <%= submit_tag("Submit") %>
+  </div>
+<% end %>

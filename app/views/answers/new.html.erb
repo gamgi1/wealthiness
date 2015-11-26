@@ -1,0 +1,149 @@
+<h1 class="text-center">How Likely are You to Become Wealthy?</h1>
+<hr>
+
+<%= form_for(@answer, html: {class: 'form'}) do |f| %>
+<div class="row">
+  <div class="col-sm-2">
+    <div class='form-group'>
+      <p>What is your age?</p>
+      <%= f.number_field :age, class: 'form-control' %>
+    </div>
+  </div>
+</div>
+  <div class='form-group'>
+    <p>What is your annual income?</p>
+    <%= f.number_field :income, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>How many calories of junk food do you consume each day?</p>
+    <%= f.number_field :calories, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Do you gamble?</p>
+    <%= f.label :gamble, "Yes", :value => "true" %>
+    <%= f.radio_button :gamble, true %>
+    <%= f.label :gamble, "No", :value => "false" %>
+    <%= f.radio_button :gamble, false %>
+  </div>
+  <div class='form-group'>
+    <p>How many times a week do you exercise aerobically?</p>
+    <%= f.number_field :aerobic_hours, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Do you listen to audio books?</p>
+    <%= f.label :audio_books, "Yes", :value => "true" %>
+    <%= f.radio_button :audio_books, true %>
+    <%= f.label :audio_books, "No", :value => "false" %>
+    <%= f.radio_button :audio_books, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you maintain a to-do list?</p>
+    <%= f.label :to_do_list, "Yes", :value => "true" %>
+    <%= f.radio_button :to_do_list, true %>
+    <%= f.label :to_do_list, "No", :value => "false" %>
+    <%= f.radio_button :to_do_list, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you make your children read two or more non-fiction books a month?</p>
+    <%= f.label :non_fiction_books, "Yes", :value => "true" %>
+    <%= f.radio_button :non_fiction_books, true %>
+    <%= f.label :non_fiction_books, "No", :value => "false" %>
+    <%= f.radio_button :non_fiction_books, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you make your children volunteer 10 hours or more a month?</p>
+    <%= f.label :service, "Yes", :value => "true" %>
+    <%= f.radio_button :service, true %>
+    <%= f.label :service, "No", :value => "false" %>
+    <%= f.radio_button :service, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you make Happy Birthday calls?</p>
+    <%= f.label :happy_birthday_calls, "Yes", :value => "true" %>
+    <%= f.radio_button :happy_birthday_calls, true %>
+    <%= f.label :happy_birthday_calls, "No", :value => "false" %>
+    <%= f.radio_button :happy_birthday_calls, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you write down your goals?</p>
+    <%= f.label :write_down_goals, "Yes", :value => "true" %>
+    <%= f.radio_button :write_down_goals, true %>
+    <%= f.label :write_down_goals, "No", :value => "false" %>
+    <%= f.radio_button :write_down_goals, false %>
+  </div>
+  <div class='form-group'>
+    <p>How many minutes each day do you read for education or career reasons?</p>
+    <%= f.number_field :daily_read, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Do you say what’s on your mind?</p>
+    <%= f.label :speak_mind, "Yes", :value => "true" %>
+    <%= f.radio_button :speak_mind, true %>
+    <%= f.label :speak_mind, "No", :value => "false" %>
+    <%= f.radio_button :speak_mind, false %>
+  </div>
+  <div class='form-group'>
+    <p>How many hours do you network each month?</p>
+    <%= f.number_field :network, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Are you focused on accomplishing some single goal?</p>
+    <%= f.label :goal, "Yes", :value => "true" %>
+    <%= f.radio_button :goal, true %>
+    <%= f.label :goal, "No", :value => "false" %>
+    <%= f.radio_button :goal, false %>
+  </div>
+  <div class='form-group'>
+    <p>How many hours of TV do you watch each day?</p>
+    <%= f.number_field :tv_hours, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Do you watch reality TV?</p>
+    <%= f.label :reality_tv, "Yes", :value => "true" %>
+    <%= f.radio_button :reality_tv, true %>
+    <%= f.label :reality_tv, "No", :value => "false" %>
+    <%= f.radio_button :reality_tv, false %>
+  </div>
+  <div class='form-group'>
+    <p>How many hours before you have to go to work do you wake up?</p>
+    <%= f.number_field :hours_before_work, class: 'form-control' %>
+  </div>
+  <div class='form-group'>
+    <p>Do you teach good daily success habits to your children?</p>
+    <%= f.label :teach_success, "Yes", :value => "true" %>
+    <%= f.radio_button :teach_success, true %>
+    <%= f.label :teach_success, "No", :value => "false" %>
+    <%= f.radio_button :teach_success, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you believe good habits create opportunity luck?</p>
+    <%= f.label :opportunity, "Yes", :value => "true" %>
+    <%= f.radio_button :opportunity, true %>
+    <%= f.label :opportunity, "No", :value => "false" %>
+    <%= f.radio_button :opportunity, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you believe bad habits create detrimental luck?</p>
+    <%= f.label :detriment, "Yes", :value => "true" %>
+    <%= f.radio_button :detriment, true %>
+    <%= f.label :detriment, "No", :value => "false" %>
+    <%= f.radio_button :detriment, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you believe in lifelong educational self-improvement?</p>
+    <%= f.label :self_improve, "Yes", :value => "true" %>
+    <%= f.radio_button :self_improve, true %>
+    <%= f.label :self_improve, "No", :value => "false" %>
+    <%= f.radio_button :self_improve, false %>
+  </div>
+  <div class='form-group'>
+    <p>Do you love to read?</p>
+    <%= f.label :love_to_read, "Yes", :value => "true" %>
+    <%= f.radio_button :love_to_read, true %>
+    <%= f.label :love_to_read, "No", :value => "false" %>
+    <%= f.radio_button :love_to_read, false %>
+  </div>
+  <div class="form-group">
+    <%= f.submit('Calculate Likelihood of Being Wealthy', class: 'btn btn-lg btn-success') %>
+  </div>
+<% end %>
