@@ -2,21 +2,17 @@
 <hr>
 
 <%= form_for(@answer, html: {class: 'form'}) do |f| %>
-<div class="row">
-  <div class="col-sm-2">
-    <div class='form-group'>
-      <p>What is your age?</p>
-      <%= f.number_field :age, class: 'form-control' %>
-    </div>
+  <div class='form-group'>
+    <p>What is your age?</p>
+    <%= f.number_field :age, class: 'form-control  input-lg' %>
   </div>
-</div>
   <div class='form-group'>
     <p>What is your annual income?</p>
-    <%= f.number_field :income, class: 'form-control' %>
+    <%= f.number_field :income, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>How many calories of junk food do you consume each day?</p>
-    <%= f.number_field :calories, class: 'form-control' %>
+    <%= f.number_field :calories, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Do you gamble?</p>
@@ -27,7 +23,7 @@
   </div>
   <div class='form-group'>
     <p>How many times a week do you exercise aerobically?</p>
-    <%= f.number_field :aerobic_hours, class: 'form-control' %>
+    <%= f.number_field :aerobic_hours, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Do you listen to audio books?</p>
@@ -73,7 +69,7 @@
   </div>
   <div class='form-group'>
     <p>How many minutes each day do you read for education or career reasons?</p>
-    <%= f.number_field :daily_read, class: 'form-control' %>
+    <%= f.number_field :daily_read, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Do you say what’s on your mind?</p>
@@ -84,7 +80,7 @@
   </div>
   <div class='form-group'>
     <p>How many hours do you network each month?</p>
-    <%= f.number_field :network, class: 'form-control' %>
+    <%= f.number_field :network, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Are you focused on accomplishing some single goal?</p>
@@ -95,7 +91,7 @@
   </div>
   <div class='form-group'>
     <p>How many hours of TV do you watch each day?</p>
-    <%= f.number_field :tv_hours, class: 'form-control' %>
+    <%= f.number_field :tv_hours, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Do you watch reality TV?</p>
@@ -106,7 +102,7 @@
   </div>
   <div class='form-group'>
     <p>How many hours before you have to go to work do you wake up?</p>
-    <%= f.number_field :hours_before_work, class: 'form-control' %>
+    <%= f.number_field :hours_before_work, class: 'form-control input-lg' %>
   </div>
   <div class='form-group'>
     <p>Do you teach good daily success habits to your children?</p>
